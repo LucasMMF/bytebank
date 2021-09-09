@@ -23,5 +23,21 @@ public class CriaConta {
 		
 		segundaConta.agencia = 146;
 		System.out.println("Agora a segunda conta está na agência " + segundaConta.agencia);
+		
+		System.out.println("Igualando os objetos...");
+		segundaConta.saldo = 300;
+		System.out.println("Primeira conta possui saldo: " + primeiraConta.saldo
+				+ ". Bem como a segunda conta agora também possui saldo: " + segundaConta.saldo);
+		primeiraConta.agencia = 146;
+		System.out.println("Primeira conta agora também possui agência: " + primeiraConta.agencia
+				+ ". Bem como a segunda conta também possui agência: " + segundaConta.agencia);
+		if (primeiraConta == segundaConta) {
+			System.out.println("Mesma conta");
+		} else {
+			System.out.println("Contas diferentes");
+		}
+		
+		System.out.println(primeiraConta);
+		System.out.println(segundaConta);
 	}
 }
