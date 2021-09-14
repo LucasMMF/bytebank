@@ -10,7 +10,7 @@ public class TestaContaSemCliente {
 		
 		 // nurupo
 		 // gah!
-		contaDaMarcela.getTitular().nome = "Marcela";
-		System.out.println(contaDaMarcela.getTitular().nome);
+		contaDaMarcela.getTitular().setNome("Marcela");
+		System.out.println(contaDaMarcela.getTitular().getNome());
 	}
 }
