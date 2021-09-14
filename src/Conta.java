@@ -1,10 +1,15 @@
 
 public class Conta {
 	
-	double saldo;
+	private double saldo;
 	int agencia = 42;
 	int numero;
 	Cliente titular;
+	
+	// Métodos getters
+	public double getSaldo() {
+		return this.saldo;
+	}
 	
 	public void deposita(double valor) {
 		this.saldo += valor;
