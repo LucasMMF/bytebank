@@ -5,12 +5,12 @@ public class TestaContaSemCliente {
 		Conta contaDaMarcela = new Conta();
 		System.out.println(contaDaMarcela.getSaldo());
 		
-		contaDaMarcela.titular = new Cliente(); // Sem isso dá o famoso nurupo, NullPointerException
-		System.out.println(contaDaMarcela.titular);
+		contaDaMarcela.setTitular(new Cliente()); // Sem isso dá o famoso nurupo, NullPointerException
+		System.out.println(contaDaMarcela.getTitular());
 		
 		 // nurupo
 		 // gah!
-		contaDaMarcela.titular.nome = "Marcela";
-		System.out.println(contaDaMarcela.titular.nome);
+		contaDaMarcela.getTitular().nome = "Marcela";
+		System.out.println(contaDaMarcela.getTitular().nome);
 	}
 }

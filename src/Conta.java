@@ -1,16 +1,42 @@
 
 public class Conta {
 	
-	private double saldo;
-	int agencia = 42;
-	int numero;
-	Cliente titular;
+	private double 	saldo;
+	private int 	agencia = 42;
+	private int 	numero;
+	private Cliente titular;
 	
 	// Métodos getters
 	public double getSaldo() {
 		return this.saldo;
 	}
 	
+	public int getAgencia() {
+		return this.agencia;
+	}
+	
+	public int getNumero() {
+		return this.numero;
+	}
+	
+	public Cliente getTitular() {
+		return this.titular;
+	}
+	
+	// Métodos setters
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+	
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	
+	// Métodos de Conta
 	public void deposita(double valor) {
 		this.saldo += valor;
 	}
