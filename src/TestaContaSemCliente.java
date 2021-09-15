@@ -2,7 +2,7 @@
 public class TestaContaSemCliente {
 	
 	public static void main(String[] args) {
-		Conta contaDaMarcela = new Conta();
+		Conta contaDaMarcela = new Conta(1, 1);
 		System.out.println(contaDaMarcela.getSaldo());
 		
 		contaDaMarcela.setTitular(new Cliente()); // Sem isso dá o famoso nurupo, NullPointerException

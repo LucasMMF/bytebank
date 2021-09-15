@@ -3,7 +3,7 @@ public class CriaConta {
 	
 	public static void main(String[] args) {
 		
-		Conta primeiraConta = new Conta();
+		Conta primeiraConta = new Conta(1, 1);
 		// primeiraConta.saldo = 200;
 		primeiraConta.deposita(200);
 		System.out.println(primeiraConta.getSaldo());
@@ -12,7 +12,7 @@ public class CriaConta {
 		primeiraConta.deposita(100);
 		System.out.println(primeiraConta.getSaldo());
 		
-		Conta segundaConta = new Conta();
+		Conta segundaConta = new Conta(1, 1);
 		// segundaConta.saldo = 50;
 		segundaConta.deposita(50);
 		

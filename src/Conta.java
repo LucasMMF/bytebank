@@ -1,10 +1,17 @@
 
 public class Conta {
 	
-	private double 	saldo;
-	private int 	agencia = 42;
-	private int 	numero;
-	private Cliente titular;
+	private double 		saldo;
+	private int 		agencia = 42;
+	private int 		numero;
+	private Cliente 	titular;
+	
+	// Construtores
+	public Conta(int agencia, int numero) {
+		this.agencia = agencia;
+		this.numero = numero;
+		System.out.println("Estou criando uma conta " + this.numero);
+	}
 	
 	// Métodos getters
 	public double getSaldo() {
@@ -25,10 +32,18 @@ public class Conta {
 	
 	// Métodos setters
 	public void setAgencia(int agencia) {
+		if (agencia <= 0) {
+			System.out.println("Não pode valor menor ou igual a 0.");
+			return;
+		}
 		this.agencia = agencia;
 	}
 	
 	public void setNumero(int numero) {
+		if (numero <= 0) {
+			System.out.println("Não pode valor menor ou igual a 0.");
+			return;
+		}
 		this.numero = numero;
 	}
 	

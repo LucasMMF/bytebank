@@ -7,7 +7,7 @@ public class TestaBanco {
 		paulo.setCpf("222.222.222-22");
 		paulo.setProfissao("Programador");
 		
-		Conta contaDoPaulo = new Conta();
+		Conta contaDoPaulo = new Conta(1, 1);
 		contaDoPaulo.deposita(100);
 		
 		contaDoPaulo.setTitular(paulo);
