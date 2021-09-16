@@ -26,14 +26,21 @@ public class TesteReferencias {
 		System.out.println(primeiraConta);
 		System.out.println(segundaConta);
 		
-		Funcionario g1 = new Gerente();
+		Gerente g1 = new Gerente();
 		g1.setNome("Marcos");
-		String nome = g1.getNome();
+		g1.setSalario(5000.00);
 		
-		// Referência g1 é Funcionário, não gerente,
-		// portanto o compilador não consegue compilar g1.autentica!
-		// g1.autentica(2222);
+		Funcionario f = new Funcionario();
+		f.setSalario(2000.00);
 		
-		System.out.println(nome);
+		EditorVideo ev = new EditorVideo();
+		ev.setSalario(2500.00);
+		
+		ControleBonificacao controle = new ControleBonificacao();
+		controle.registra(g1);
+		controle.registra(f);
+		controle.registra(ev);
+		
+		System.out.println(controle.getSoma());
 	}
 }
