@@ -25,5 +25,15 @@ public class TesteReferencias {
 		
 		System.out.println(primeiraConta);
 		System.out.println(segundaConta);
+		
+		Funcionario g1 = new Gerente();
+		g1.setNome("Marcos");
+		String nome = g1.getNome();
+		
+		// Referência g1 é Funcionário, não gerente,
+		// portanto o compilador não consegue compilar g1.autentica!
+		// g1.autentica(2222);
+		
+		System.out.println(nome);
 	}
 }
