@@ -3,7 +3,7 @@ public class Funcionario {
 	
 	private String nome;
 	private String cpf;
-	protected double salario;
+	private double salario;
 	
 	// Construtores
 	public Funcionario() {
@@ -12,7 +12,7 @@ public class Funcionario {
 	
 	// Métodos da classe
 	public double getBonificacao() {
-		return this.salario * 0.1;
+		return this.salario * 0.05;
 	}
 	
 	// Métodos getters
