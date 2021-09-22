@@ -1,6 +1,8 @@
 
 // O conceito de um Funcionário é um conceito abstrato
 // por tanto não devemos ter objetos concretos instanciados deste conceito.
+// Como tornamos esta classe em uma classe abstrata,
+// não podemos instanciar essa classe.
 public abstract class Funcionario {
 	
 	private String nome;
@@ -13,9 +15,9 @@ public abstract class Funcionario {
 	}
 	
 	// Métodos da classe
-	public double getBonificacao() {
-		return this.salario * 0.05;
-	}
+	// Método sem corpo, não há implementação.
+	// Ou seja, apenas um conceito abstrato!
+	public abstract double getBonificacao();
 	
 	// Métodos getters
 	public String getNome() {
