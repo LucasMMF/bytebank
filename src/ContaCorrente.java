@@ -10,4 +10,9 @@ public class ContaCorrente extends Conta {
 		valor += 0.2;
 		return super.saca(valor);
 	}
+	
+	@Override
+	public void deposita(double valor) {
+		super.saldo += valor;
+	}
 }

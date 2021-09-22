@@ -2,7 +2,7 @@
 public class TestaMetodo {
 	
 	public static void main(String[] args) {
-		Conta contaDoPaulo = new Conta(1, 1);
+		Conta contaDoPaulo = new ContaPoupanca(1, 1);
 		// contaDoPaulo.saldo = 100;
 		contaDoPaulo.deposita(100);
 		contaDoPaulo.deposita(50);
@@ -12,7 +12,7 @@ public class TestaMetodo {
 		System.out.println(contaDoPaulo.getSaldo());
 		System.out.println(conseguiuRetirar);
 		
-		Conta contaDaMarcela = new Conta(1, 1);
+		Conta contaDaMarcela = new ContaCorrente(1, 1);
 		contaDaMarcela.deposita(1000);
 		
 		boolean sucessoTransferencia = contaDaMarcela.transfere(300, contaDoPaulo);

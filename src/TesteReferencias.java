@@ -3,7 +3,7 @@ public class TesteReferencias {
 	
 	public static void main(String[] args) {
 		
-		Conta primeiraConta = new Conta(1, 1);
+		Conta primeiraConta = new ContaPoupanca(1, 1);
 		// primeiraConta.saldo = 300;
 		primeiraConta.deposita(300);
 		
