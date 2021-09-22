@@ -1,5 +1,7 @@
 
-public class Funcionario {
+// O conceito de um Funcionário é um conceito abstrato
+// por tanto não devemos ter objetos concretos instanciados deste conceito.
+public abstract class Funcionario {
 	
 	private String nome;
 	private String cpf;

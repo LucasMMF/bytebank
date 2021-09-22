@@ -30,8 +30,8 @@ public class TesteReferencias {
 		g1.setNome("Marcos");
 		g1.setSalario(5000.00);
 		
-		Funcionario f = new Funcionario();
-		f.setSalario(2000.00);
+		// Funcionario f = new Funcionario(); -> Classe abstrata! Não pode ser instanciada!
+		// f.setSalario(2000.00);
 		
 		EditorVideo ev = new EditorVideo();
 		ev.setSalario(2500.00);
@@ -41,7 +41,7 @@ public class TesteReferencias {
 		
 		ControleBonificacao controle = new ControleBonificacao();
 		controle.registra(g1);
-		controle.registra(f);
+		// controle.registra(f);
 		controle.registra(ev);
 		controle.registra(d);
 		
