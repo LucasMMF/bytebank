@@ -1,8 +1,19 @@
 
-public class Cliente extends Autenticavel {
-	private String nome;
-	private String cpf;
-	private String profissao;
+public class Cliente implements Autenticavel {
+	private String 	nome;
+	private String 	cpf;
+	private String 	profissao;
+	private int 	senha;
+	
+	// Métodos da classe
+	@Override
+	public boolean autentica(int senha) {
+		if (this.senha == senha) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 	
 	// Métodos getters
 	public String getNome() {
@@ -28,5 +39,10 @@ public class Cliente extends Autenticavel {
 	
 	public void setProfissao(String profissao) {
 		this.profissao = profissao;
+	}
+	
+	@Override
+	public void setSenha(int senha) {
+		this.senha = senha;
 	}
 }
