@@ -1,4 +1,5 @@
 
+// Cliente é/assina contrato Autenticável
 public class Cliente implements Autenticavel {
 	private String 	nome;
 	private String 	cpf;
