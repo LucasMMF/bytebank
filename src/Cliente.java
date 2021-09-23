@@ -1,5 +1,5 @@
 
-public class Cliente {
+public class Cliente extends Autenticavel {
 	private String nome;
 	private String cpf;
 	private String profissao;
