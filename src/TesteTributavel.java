@@ -2,16 +2,19 @@
 public class TesteTributavel {
 
 	public static void main(String[] args) {
-		ContaCorrente cc = new ContaCorrente(2222, 3333);
-		SeguroDeVida sv = new SeguroDeVida();
-		AcaoBolsa ab = new AcaoBolsa();
+		ContaCorrente cc = new ContaCorrente(222, 333);
+		cc.deposita(100.0);
 		
-		CalculadorImposto ci = new CalculadorImposto();
-		ci.calculaImposto(cc);
-		ci.calculaImposto(sv);
-		ci.calculaImposto(ab);
+		SeguroDeVida seguro = new SeguroDeVida();
 		
-		System.out.println("O total de imposto arrecadado é: " + ci.getTotal());
+		AcaoBolsa acao = new AcaoBolsa();
+		
+		CalculadorImposto calc = new CalculadorImposto();
+		calc.registra(cc);
+		calc.registra(seguro);
+		calc.registra(acao);
+		
+		System.out.println("O total de imposto arrecadado é: " + calc.getTotalImposto());
 
 	}
 

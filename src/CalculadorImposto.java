@@ -1,14 +1,14 @@
 
 public class CalculadorImposto {
 	
-	private double total;
+	private double totalImposto;
 	
-	public void calculaImposto(Tributavel tri) {
-		this.total += tri.getValorImposto();
+	public void registra(Tributavel t) {
+		this.totalImposto += t.getValorImposto();
 	}
 	
-	public double getTotal() {
-		return this.total;
+	public double getTotalImposto() {
+		return this.totalImposto;
 	}
 	
 }
