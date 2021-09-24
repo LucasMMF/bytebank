@@ -2,7 +2,11 @@
 // Administrador é Funcionário e assina contrato Autenticável
 public class Administrador extends Funcionario implements Autenticavel {
 	
-	private int senha;
+	private AutenticacaoUtil autenticador;
+	
+	public Administrador() {
+		this.autenticador = new AutenticacaoUtil();
+	}
 
 	// Métodos da classe
 	@Override
@@ -12,17 +16,13 @@ public class Administrador extends Funcionario implements Autenticavel {
 	
 	@Override
 	public boolean autentica(int senha) {
-		if (this.senha == senha) {
-			return true;
-		} else {
-			return false;
-		}
+		return this.autenticador.autentica(senha);
 	}
 	
 	// Métodos setters
 	@Override
 	public void setSenha(int senha) {
-		this.senha = senha;
+		this.autenticador.setSenha(senha);
 	}
 
 }
